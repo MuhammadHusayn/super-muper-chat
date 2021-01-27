@@ -133,12 +133,39 @@ body {
 }
 
 .message p {
+	position: relative;
 	max-width: 70%;
 	padding: 10px;
 	border-radius: 5px;
 	margin: 0;
 	word-break: break-all;
 	word-wrap: break-word;
+}
+
+.msg-left p::before,
+.msg-right p::after {
+	position: absolute;
+	top: 0;
+	display: inline-block;
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 6px solid blue;
+	background-color: transparent;
+}
+
+.msg-left p::before {
+	left: -8px;
+	border-color: #E6EDF6;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+}
+
+.msg-right p::after {
+	right: -8px;
+	border-color: #F2F2F2;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
 }
 
 .msg-left p {
