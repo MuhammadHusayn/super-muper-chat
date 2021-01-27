@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Loop 1 - Step 4</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalise.css">
-  <link rel="stylesheet" href="css/styles.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Loop 1 - Step 4</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalise.css">
+	<link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  
+	<div class="chat">
+		<header class="chat-header">
+			<h3 class="chat-username chat-username-online">Mark Zuckerberg</h3>
+			 <button class="chat-close-btn">
+			 	<img src="img/close.svg" alt="close btn" width="24" height="24">
+			 </button>
+		</header>
+
+		<div class="chat-main">
+			<div class="messages">
+				<div class="date">
+					<time class="chat-time" datetime="2021-01-27">today</time>
+				</div>
+				<div class="message msg-left">
+					<time datetime="2021-01-27 10:53">10:53</time>
+					<p>Hi, Mark! I made a new design for Messenger App</p>
+				</div>
+
+				<div class="message msg-right">
+					<time datetime="2021-01-27 10:53">10:53</time>
+					<p>Yo! Send it to my assistant and we'll review it during the year!</p>
+				</div>
+
+				<div class="message msg-left">
+					<time datetime="2021-01-27 10:53">10:53</time>
+					<p>But Mark...</p>
+				</div>
+
+				<div class="message alert-message">
+					<p>You are blocked by the user.</p>
+				</div>
+			</div>	
+			<form action="#" method="POST">
+				<input type="text" required placeholder="Enter your message...">
+				<button type="submit">send</button>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
